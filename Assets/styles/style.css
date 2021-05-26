@@ -1,0 +1,90 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.animatin_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+
+}
+img{
+    position: absolute;
+    width: 300px;
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.heads{
+    animation-name: head;
+}
+.tail{
+    animation-name: tail;
+    
+}
+@keyframes tail {
+    0%{
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+    50%{
+        z-index: 5;
+        transform: rotateY(180deg);
+    }
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+    100%{
+        z-index: 10;
+        transform: rotateY(360deg);
+    }
+}
+@keyframes head {
+    0%{
+        z-index: 5;
+        transform: rotateY(0deg);
+    }
+    25%{
+        z-index: 5;
+        transform: rotateY(90deg);
+    }
+    50%{
+        z-index: 10;
+        transform: rotateY(180deg);
+    }
+    75%{
+        z-index: 10;
+        transform: rotateY(270deg);
+    }
+    100%{
+        z-index: 5;
+        transform: rotateY(360deg);
+    }
+}
+h1{
+    margin-top:300px;
+    text-align: center;
+    color: #653b17;
+    text-align: center;
+}
+h2{
+    font-size: 32px;
+    color: #653b17;
+    text-align: center;
+}
+h3{
+    font-size: 32px;
+    color: #653b17;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: #653b17;
+}
